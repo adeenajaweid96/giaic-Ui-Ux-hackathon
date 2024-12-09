@@ -31,7 +31,7 @@ const Section2 = () => {
             <Image  src={Purchase} alt='purchase'/>
             <h1 className='text-{#2A254B} text-xl pt-5'>Unbeatable prices</h1>
             <p className='pt-6'>For our materials and quality<br/>
-             you won't find better prices<br/> anywhere</p>
+             you wont find better prices<br/> anywhere</p>
         </div>
 
 
