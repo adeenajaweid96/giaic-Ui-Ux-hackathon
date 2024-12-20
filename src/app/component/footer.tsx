@@ -14,13 +14,13 @@ import { FaSkype } from "react-icons/fa6";
 const Footer = () => {
   return (
 
-    <div className='grid grid-rows-1 w-{100% } h-5/6 bg-{#2A254B} '>
- {/* <div className='grid grid-cols-2'>Menu</div>
+    <div className='grid grid-rows-1 w-full h-5/6 realtive pt-10 bg-[#2A254B] '>
+ <div className='grid grid-cols-2'>Menu</div>
  <div className=' grid grid-cols-2'>Categories</div>
  <div className='grid grid-cols-2'>Our Company</div>
- <div className='grid grid-cols-6'>Join Our mailing list</div> */}
+ <div className='grid grid-cols-6'>Join Our mailing list</div>
 
-    {/* <div>
+    <div>
         <h1>Copyright 2022 Avian LTD</h1>
 
         <LinkedInIcon/>
@@ -30,9 +30,13 @@ const Footer = () => {
         <TwitterIcon/>
         <FaSkype />
 
-        </div> */}
+        </div>
    </div>
   )
 }
 
 export default Footer
+
+
+
+

@@ -24,7 +24,7 @@ const Section4 = () => {
 
     <div className=''>
 <Image src={LastImage} alt='Lastimage' className="pb-10 h-[40vh] bg-cover bg-center relative md:h-[70vh]"/>
-<h1 className='text-white  flex  justify-center items-center text-3xl font-semibold -mt-[350px] relative'>Join the club and get the benefits</h1>
+  <h1 className='text-white  flex  justify-center items-center text-3xl font-semibold -mt-[350px] relative'>Join the club and get the benefits</h1>
 <p className='text-white font-semibold relative p-3  flex justify-center items-center'>Sign up for our newsletter and receive exclusive offers on<br/>
  new ranges, sales, pop up stores and more</p>
 
