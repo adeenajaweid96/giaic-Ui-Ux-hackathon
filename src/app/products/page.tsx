@@ -16,7 +16,9 @@ import photo8 from "../../../public/Photo(8).png";
 
 const Product = () => {
   return (
-    <div>
+
+   
+    <div className='max-w-screen-2xl mx-auto'>
 {/* <List/> */}
         <Image src={Frame} alt='product-list' className='w-full'/>
         {/* <Image src={product} alt='photo' className='relative w-[100%]  bg-no-repeat  bg-cover bg-center '/> */}
@@ -77,9 +79,7 @@ const Product = () => {
         </div>
 
   
-        <button className=' bg-gray-100 text-gray-500 ml-10  px-10  border-2 rounded-md w-[200px] h-[60px] '>View Collection</button>
       </div>
-
       
       <div className='flex justify-center flex-wrap gap-10 pt-14'>
         <div className=''>
@@ -106,10 +106,13 @@ const Product = () => {
             <h1 className='pt-5 text-{#2A254B}'>The Lucy Lamp</h1>
             <p className='pt-2' >£399</p>
         </div>
-        <button className=' bg-gray-100 text-gray-500 ml-10  px-10  border-2 rounded-md w-[200px] h-[60px] '>View Collection</button>
 
       </div>
+      <div className='flex justify-center py-20'>
+      <button className=' bg-gray-100 text-gray-500 ml-10  px-10  border-2 rounded-md w-[200px] h-[60px] '>View Collection</button>
+      </div>
     </div>
+
   )
 }
 

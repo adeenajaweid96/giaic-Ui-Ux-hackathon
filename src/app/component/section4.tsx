@@ -1,7 +1,9 @@
 import React from 'react'
+import Link from 'next/link';
 import Image from 'next/image';
 import Container from "../../../public/Image Block.png";
 import LastImage from "../../../public/half-image.jpg";
+import signup from "../../../public/Email sign-up.png";
 
 const Section4 = () => {
   return (
@@ -12,8 +14,9 @@ const Section4 = () => {
 <p className='text-white px-6 pt-6 pb-28'>A global brand with local beginnings, our story begain in a<br/>
  small studio in South London in early 2014</p>
 
+<Link href='/about'>
  <button className=' bg-[#F9F9F926] text-white ml-10  px-10  w-[200px] h-[60px] '>View Collection</button>
-
+ </Link>
         </div>
         <div>
             <Image src={Container} alt='Sofa-image'/>
@@ -21,8 +24,16 @@ const Section4 = () => {
       
     </div>
 
+<div className='max-w-screen-2xl mx-auto'>
+<Image src={signup} alt='signup-section' className='w-full'/>
+{/* <Image src={LastImage} alt='signup-section' className='w-full h-[500px]'/>
+<h1 className='text-white  flex  justify-center items-center text-3xl font-semibold  absolute'>Join the club and get the benefits</h1>
+<p className='text-white font-semibold absolute  flex justify-center items-center'>Sign up for our newsletter and receive exclusive offers on<br/>
+ new ranges, sales, pop up stores and more</p> */}
 
-    <div className=''>
+</div>
+
+    {/* <div className=''>
 <Image src={LastImage} alt='Lastimage' className="pb-10 h-[40vh] bg-cover bg-center relative md:h-[70vh]"/>
   <h1 className='text-white  flex  justify-center items-center text-3xl font-semibold -mt-[350px] relative'>Join the club and get the benefits</h1>
 <p className='text-white font-semibold relative p-3  flex justify-center items-center'>Sign up for our newsletter and receive exclusive offers on<br/>
@@ -51,7 +62,7 @@ const Section4 = () => {
             Sign up
           </button>
         </form>
-    </div>
+    </div> */}
     </>
   )
 }

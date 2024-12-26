@@ -9,7 +9,7 @@ import photo4 from "../../../public/Parent.png";
 
 const Section3 = () => {
   return (
-    <div className='flex justify-center flex-wrap gap-10 pt-10'>
+    <div className='flex justify-center flex-wrap gap-10 pt-10 max-w-screen-2xl mx-auto'>
         <div className=''>
             <Image src={photo1} alt='Card1'/>
             <h1 className='pt-5 text-{#2A254B}'>The Dandy chair</h1>
@@ -35,9 +35,23 @@ const Section3 = () => {
             <p className='pt-2' >£399</p>
         </div>
 
+     
+
   
-        <button className=' bg-gray-100 text-gray-500 ml-10  px-10  border-2 rounded-md w-[200px] h-[60px] '>View Collection</button>
+        {/* <button className=' bg-gray-100 text-gray-500 ml-10  px-10  border-2 rounded-md w-[200px] h-[60px] '>View Collection</button> */}
+   
+{/*    
+        <div className='flex justify-center items-center'>
+   <button className='flex justify-center items-center bg-gray-100 text-gray-500  my-10 px-10  border-2 rounded-md w-[200px] h-[60px] '>View Collection</button>
+ </div>  */}
+
+ <div className='flex justify-center py-20'>
+      <button className=' bg-gray-100 text-gray-500 ml-10  px-10  border-2 rounded-md w-[200px] h-[60px] '>View Collection</button>
       </div>
+   
+   
+      </div>
+
 
   )
 }

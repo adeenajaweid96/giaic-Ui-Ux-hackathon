@@ -16,91 +16,26 @@ import check from "../../../public/Checkmark.png";
 
 const List = () => {
   return (
-    <div>
 
-      <div className='flex justify-between p-6 border-bg-slate-600 border-b-2 '>
-        <Image src={Logo} alt="Avion" className='flex justify-center !important' />
+<div>
 
+{/* max-w-screen-2xl mx-auto */}
+      <div className='flex flex-row flex-wrap'>
         <div>
-
-<ul className='flex justify-center p-5 gap-12 text-xl text-gray-400'>
-  <li className=''>
-    <Link href="#">Plant pots</Link></li>
-  <li>
-    <Link href="#">Ceramics</Link>
-  </li>
-  <li>
-    <Link href="#">Tables</Link>
-  </li>
-  <li>
-    <Link href="#">Chairs</Link>
-  </li>
-  <li>
-    <Link href="#">Crockery</Link>
-  </li>
-  <li>
-    <Link href="#">Tableware</Link>
-  </li>
-  <li>
-    <Link href="#">Cutlery</Link>
-  </li>
-</ul>
-</div>
-        <div className='flex text-gray-600'>
-          <Search className='text-gray-600' />
-          <ShoppingCart />
-          <CircleUserRound className='ml-8' />
-        </div>
-
-
-      </div>
-      {/* <div>
-
-        <ul className='flex justify-center p-5 gap-12 text-xl text-gray-400'>
-          <li className=''>
-            <Link href="#">Plant pots</Link></li>
-          <li>
-            <Link href="#">Ceramics</Link>
-          </li>
-          <li>
-            <Link href="#">Tables</Link>
-          </li>
-          <li>
-            <Link href="#">Chairs</Link>
-          </li>
-          <li>
-            <Link href="#">Crockery</Link>
-          </li>
-          <li>
-            <Link href="#">Tableware</Link>
-          </li>
-          <li>
-            <Link href="#">Cutlery</Link>
-          </li>
+        <Image src={leftimage} alt='leftside image'/></div>
+        <div className='py-20 pl-10'>
+        <h1 className='text-4xl flex justify-start flex-wrap  font-medium  text-[#2A254B]  '>The Dandy Chair<br />£250</h1>
+        <p className='text-[#2A254B] text-xl font-medium py-8'>Description<br/>A timeless design, with premium materials features as one of our most<br />
+          popular and iconic pieces. The dandy chair is perfect for any stylish<br />
+          living space with beech legs and lambskin leather upholstery.</p>
+        <ul className='list-disc text-xl py-10 text-[#2A254B] font-light'>
+          <li>Premium material</li>
+          <li>Handmade upholstery</li>
+          <li>Quality timeless classic</li>
         </ul>
-      </div> */}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      <div className='flex justify-between flex-wrap'>
-        <Image src={leftimage} alt='leftside image' />
-
+        </div>
       </div>
-      <h1 className='pt-10 text-[#2A254B] text-3xl ml-20 font-semibold' >You might also like</h1>
+      <h1 className='flex flex-wrap justify-around pt-10 text-[#2A254B] text-3xl ml-20 font-semibold' >You might also like</h1>
 
       <div className='flex justify-center flex-wrap gap-10 pt-10'>
 
@@ -186,7 +121,7 @@ const List = () => {
               placeholder="your@email.com"
               className="w-full sm:w-72 px-4 py-2 bg-[#F9F9F9] h-[3rem] text-black"
             />
-            <button className="bg-[#2A254B]  -ml-4   text-white px-6 py-3">
+            <button className="bg-[#2A254B]  -ml-4  text-white px-6 py-3">
               Sign up
             </button>
           </form>
@@ -194,6 +129,7 @@ const List = () => {
       </div>
 
     </div>
+
   )
 }
 
