@@ -1,6 +1,5 @@
 import React from 'react';
 import Image from "next/image";
-// import List from "./list";
 import product from "../../../public/product.jpg";
 import Frame from "../../../public/Frame 143.png";
 import photo1 from "../../../public/Photo (2).png";
@@ -9,7 +8,8 @@ import photo3 from "../../../public/Photo (1).png";
 import photo4 from "../../../public/Parent.png";
 import photo5 from "../../../public/Photo (5).png";
 import photo6 from "../../../public/Photo (6).png";
-import photo7 from "../../../public/Photo(7).png";
+import photo7 from '../../../public/photo(7).png'
+// import photo7 from "../../../public/Photo(7).png";
 import photo8 from "../../../public/Photo(8).png";
 
 
