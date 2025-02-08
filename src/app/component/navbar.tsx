@@ -1,4 +1,4 @@
-import React from 'react'
+"use client"
 import Image from "next/image";
 import Link from "next/link";
 import Logo from "../../../public/Avion.png";
@@ -11,9 +11,15 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet"
+import { useSelector } from "react-redux";
+import { RootState } from "../redux/store";
+import React, { useState } from "react";
+
 
 
 const Navbar = () => {
+  const item = useSelector((state: RootState) => state.cart);
+
   return (
 
     <div>
@@ -21,7 +27,20 @@ const Navbar = () => {
         <Search className='hidden md:block text-gray-600' />
       <Image src={Logo} alt="Avion" className=' flex justify-center'/>
       <div className='hidden md:flex text-gray-600'>
-       <a href="/cart"> <ShoppingCart/></a>
+   
+      {/* <Link href="/cart" className="relative">
+      <ShoppingCart/>
+            {totalItems > 0 && (
+          <span className="absolute top-0 right-0 bg-red-600 text-white text-xs rounded-full w-4 h-4 flex items-center justify-center">
+            {totalItems}
+          </span> */}
+        {/* )} */}
+      {/* </Link> */}
+       {/* <Link href="/cart"> <ShoppingCart/></Link> */}
+
+       <Link href="/cart"><ShoppingCart className="text-2xl cursor-pointer mr-2" /></Link>
+       {item.length}
+
 <CircleUserRound className='ml-8'/>
 </div>
 
